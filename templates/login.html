@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+</head>
+<body>
+<div class="container">
+    <div class="phone-preview">
+        <img src="{% static 'images/img1.png' %}" alt="Instagram Preview">
+    </div>
+
+    <div class="login-form">
+        <h1>Instagram</h1>
+        <form action="#" method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Phone, username or email" name="user_input">
+            <input type="password" placeholder="Password" name="password">
+            <button type="submit">Login</button>
+            <div class="divider">OR</div>
+            <button class="facebook-login">Login with Facebook</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+        </form>
+        <div class="signup">
+            <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Instagram from Meta</p>
+    <div class="footer-links">
+        <a href="#">Meta</a>
+        <a href="#">Information</a>
+        <a href="#">Blog</a>
+        <a href="#">Vacancies</a>
+        <a href="#">Help</a>
+        <a href="#">Confidentiality</a>
+        <a href="#">Conditions</a>
+        <a href="#">Places</a>
+    </div>
+</footer>
+</body>
+</html>

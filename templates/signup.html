@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/signupcss.css' %}">
+</head>
+<body>
+<div class="container">
+    <div class="signup-form">
+        <h1>Instagram</h1>
+        <p class="signup-message">Sign up to see photos and videos from your friends.</p>
+        <button class="facebook-login">Log in with Facebook</button>
+        <div class="divider">OR</div>
+        <form action="#">
+            <input type="text" placeholder="Mobile Number or Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="text" placeholder="Full Name" required>
+            <input type="text" placeholder="Username" required>
+            <p class="info-text">
+                People who use our service may have uploaded your contact information to Instagram.
+                <a href="#">Learn More</a>
+            </p>
+            <p class="terms">
+                By signing up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies
+                Policy</a>.
+            </p>
+            <button type="submit">Sign up</button>
+        </form>
+        <div class="login-link">
+            <p>Have an account? <a href="{% url 'login' %}">Log in</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Instagram from Meta</p>
+    <div class="footer-links">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+    </div>
+</footer>
+</body>
+</html>
