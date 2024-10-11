@@ -2,6 +2,8 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 import uuid
 
+EMAIL, PHONE_NUMBER = "EMAIL", "PHONE_NUMBER"
+
 
 class GenderType(models.TextChoices):
 	MALE = "MALE", "male"
@@ -16,4 +18,9 @@ class User(AbstractUser):
 	gender = models.CharField(max_length=7, choices=GenderType.choices, default=GenderType.UNKNOWN)
 	avatar = models.ImageField(upload_to="users/avatars/", null=True, blank=True)
 	created_at = models.DateTimeField(auto_now_add=True)
+	email = models.EmailField(max_length=55, unique=True, blank=True, null=True)
 	updated_at = models.DateTimeField(auto_now=True)
+	login_type = models.CharField(max_length=31)
+
+	def save(self, *args, **kwargs):
+		pass

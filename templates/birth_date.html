@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Your Birthday</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<div class="container">
+    {{ user }}
+    <div class="birthday-form">
+        <div class="image">
+            <img class="aaa" src="{% static 'images/img2.png' %}" alt="Birthday Cake">
+            <img class="aaa" src="{% static 'images/img2.png' %}" alt="Birthday Cake">
+        </div>
+        <h2>Add Your Birthday</h2>
+        <p>This won't be a part of your public profile.</p>
+        <p><a href="#">Why do I need to provide my birthday?</a></p>
+
+        <form action="#">
+            <div class="birthday-select">
+                <select>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+                <select>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                </select>
+            </div>
+
+            <p>You need to enter the date you were born</p>
+            <button type="submit">Next</button>
+        </form>
+
+        <div class="go-back">
+            <a href="#">Go back</a>
+        </div>
+    </div>
+
+    <div class="login-link">
+        <p>Have an account? <a href="#">Log in</a></p>
+    </div>
+</div>
+
+<footer>
+    <div class="app-links">
+        <a href="#"><img src="google-play.png" alt="Get it on Google Play"></a>
+        <a href="#"><img src="microsoft-store.png" alt="Get it from Microsoft"></a>
+    </div>
+    <p>© 2024 Instagram from Meta</p>
+    <div class="footer-links">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+    </div>
+</footer>
+</body>
+</html>

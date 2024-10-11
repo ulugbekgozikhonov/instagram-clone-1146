@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Sign Up</title>
-    <link rel="stylesheet" href="{% static 'css/signupcss.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 <div class="container">
@@ -14,11 +14,12 @@
         <p class="signup-message">Sign up to see photos and videos from your friends.</p>
         <button class="facebook-login">Log in with Facebook</button>
         <div class="divider">OR</div>
-        <form action="#">
-            <input type="text" placeholder="Mobile Number or Email" required>
-            <input type="password" placeholder="Password" required>
-            <input type="text" placeholder="Full Name" required>
-            <input type="text" placeholder="Username" required>
+        <form action="#" method="post">
+            {% csrf_token %}
+            {{ form.user_input }}
+            {{ form.password }}
+            {{ form.full_name }}
+            {{ form.username }}
             <p class="info-text">
                 People who use our service may have uploaded your contact information to Instagram.
                 <a href="#">Learn More</a>

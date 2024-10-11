@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-.container {
+.container1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,6 +95,7 @@ body {
     color: #00376b;
     font-size: 12px;
     margin-top: 10px;
+    text-decoration: none;
 }
 
 .signup {
@@ -125,4 +126,539 @@ footer {
     color: #00376b;
     text-decoration: none;
     margin: 0 5px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signup-form {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.signup-form h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.signup-message {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #8e8e8e;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+}
+
+.signup-form button {
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.signup-form .divider {
+    margin: 10px 0;
+    position: relative;
+    text-align: center;
+}
+
+.signup-form .divider::before,
+.signup-form .divider::after {
+    content: '';
+    display: inline-block;
+    width: 40%;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    top: 50%;
+}
+
+.signup-form .divider::before {
+    left: 0;
+}
+
+.signup-form .divider::after {
+    right: 0;
+}
+
+.facebook-login {
+    background-color: #4267b2;
+}
+
+.signup-form .info-text {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-bottom: 10px;
+}
+
+.signup-form .terms {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-bottom: 20px;
+}
+
+.signup-form .login-link p {
+    font-size: 14px;
+}
+
+.signup-form .login-link a {
+    color: #3897f0;
+    text-decoration: none;
+}
+
+footer {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #00376b;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.birthday-form {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.birthday-form .image img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.birthday-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.birthday-form p {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.birthday-form a {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.birthday-form form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.birthday-select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#id_month, #id_day, #id_year {
+    padding: 8px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    width: 30%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.birthday-form button {
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.birthday-form .go-back a {
+    font-size: 14px;
+    color: #3897f0;
+    text-decoration: none;
+}
+
+.login-link p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #3897f0;
+    text-decoration: none;
+}
+
+footer {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #00376b;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+.aaa {
+    width: 150px !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.confirmation-form {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.confirmation-form .image img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.confirmation-form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.confirmation-form p {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.confirmation-form a {
+    color: #00376b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.confirmation-form form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.confirmation-form input {
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    background-color: #fafafa;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.confirmation-form button {
+    padding: 10px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.confirmation-form .go-back a {
+    font-size: 14px;
+    color: #3897f0;
+    text-decoration: none;
+}
+
+.login-link p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: #3897f0;
+    text-decoration: none;
+}
+
+footer {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #00376b;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.emaill {
+    width: 100px !important;
+}
+
+.signup-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.signup-form h2 {
+    margin-bottom: 10px;
+}
+
+.signup-form p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+.captcha-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 75px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 8px;
+    padding-left: 20px;
+}
+
+.captcha-container input[type="checkbox"] {
+    transform: scale(3);
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.captcha-container img {
+    margin-left: 70px;
+    width: 50px;
+    height: auto;
+}
+
+.captcha-info {
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0084ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006fdd;
+}
+
+.back-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+.login-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.login-link p {
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.download-apps {
+    margin-top: 20px;
+}
+
+.download-apps p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.download-apps a img {
+    width: 120px;
+    margin: 0 5px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+.container {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.header {
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.instruction {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.code-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.confirm-btn {
+    width: 100%;
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background-color: #007bbf;
+}
+
+.link {
+    display: block;
+    margin-top: 10px;
+    color: #0095f6;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 150px;
+    margin-bottom: -150px;
+}
+
+.app-links img {
+    width: 120px;
+    margin: 0 10px;
 }
