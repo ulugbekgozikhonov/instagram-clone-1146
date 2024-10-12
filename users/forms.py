@@ -4,13 +4,13 @@ from users.models import User
 
 
 # MODEL_FORM
-# class SignUpForm(forms.ModelForm):
+# class SignupForm(forms.ModelForm):
 # 	class Meta:
 # 		model = User
 # 		fields = ["phone_number", "password", "first_name", "username"]
 
 
-class SignUpForm(forms.Form):
+class SignupForm(forms.Form):
 	user_input = forms.CharField(max_length=55,
 	                             widget=forms.TextInput(attrs={'placeholder': "email or phone number"}))
 	password = forms.CharField(max_length=8,
