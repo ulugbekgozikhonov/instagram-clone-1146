@@ -16,8 +16,9 @@
         <h2>Enter Confirmation Code</h2>
         <p>Enter the confirmation code we sent to <strong>your-email@gmail.com</strong>. <a href="#">Resend Code</a></p>
 
-        <form action="#">
-            <input type="text" placeholder="Confirmation Code" required>
+        <form action="{% url 'user:confirmation' %}" method="post">
+            {% csrf_token %}
+            <input type="text" placeholder="Confirmation Code" required name="code">
             <button type="submit">Next</button>
         </form>
 

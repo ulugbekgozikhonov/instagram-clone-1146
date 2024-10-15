@@ -26,6 +26,7 @@ INSTALLED_APPS = [
 
 	# locale
 	'users',
+	'post',
 ]
 
 MIDDLEWARE = [

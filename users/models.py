@@ -7,6 +7,8 @@ from django.core.validators import FileExtensionValidator
 from django.db import models
 from django.utils import timezone
 
+from general.models import BaseModel
+
 EMAIL, PHONE_NUMBER = "EMAIL", "PHONE_NUMBER"
 
 
@@ -16,20 +18,17 @@ class GenderType(models.TextChoices):
 	UNKNOWN = "UNKNOWN", "Unknown"
 
 
-class User(AbstractUser):
+class User(AbstractUser, BaseModel):
 	AUTH_TYPES = (
 		(EMAIL, "Email"),
 		(PHONE_NUMBER, "Phone Number")
 	)
 
-	id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
 	phone_number = models.CharField(max_length=31, null=True, blank=True, unique=True)
 	email = models.EmailField(max_length=100, unique=True, blank=True, null=True)
 	date_of_birth = models.DateField(null=True, blank=True)
 	avatar = models.ImageField(upload_to="users/avatars/", null=True, blank=True,
 	                           validators=[FileExtensionValidator(allowed_extensions=['jpeg', 'jpg', 'png'])])
-	updated_at = models.DateTimeField(auto_now=True)
-	created_at = models.DateTimeField(auto_now_add=True)
 	gender = models.CharField(max_length=7, choices=GenderType.choices, default=GenderType.UNKNOWN)
 	auth_type = models.CharField(max_length=33, choices=AUTH_TYPES)
 
@@ -43,6 +42,7 @@ class User(AbstractUser):
 			verify_type=verify_type,
 			code=code
 		)
+		print("USER CODE", code)
 		return code
 
 

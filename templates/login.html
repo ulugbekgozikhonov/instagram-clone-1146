@@ -16,7 +16,7 @@
 
     <div class="login-form">
         <h1>Instagram</h1>
-        <form action="#" method="post">
+        <form action="{% url 'user:login' %}" method="post">
             {% csrf_token %}
             <input type="text" placeholder="Phone, username or email" name="user_input">
             <input type="password" placeholder="Password" name="password">
@@ -26,7 +26,7 @@
             <a href="#" class="forgot-password">Forgot password?</a>
         </form>
         <div class="signup">
-            <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+            <p>Don't have an account? <a href="{% url 'user:signup' %}">Sign up</a></p>
         </div>
     </div>
 </div>
